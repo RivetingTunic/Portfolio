@@ -1,0 +1,266 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+body {
+height: auto;
+display: block;
+font-family: sans-serif; /* i should probably change this later?? */
+}
+
+
+/* nav */
+.main-nav {
+background-color: #222;
+padding: 1rem 2rem;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+position: sticky;
+top: 0;
+z-index: 200;
+}
+
+
+.main-nav ul {
+list-style: none;
+display: flex;
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+
+
+.main-nav a {
+text-decoration: none;
+color: #fff;
+font-size: 1.1rem;
+padding: 0.5rem 1rem;
+border-radius: 4px;
+transition: background-color 0.2s ease;
+}
+
+
+.main-nav a:hover {
+background-color: #444;
+}
+
+
+.main-nav a.active {
+background-color: #007bff;
+}
+
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 100%;
+height: 100vh;
+}
+
+
+/* left side */
+.left {
+display: flex;
+align-items: center;
+justify-content: center;
+border-right: 1px solid #000; /* divider */
+}
+
+
+.left h1 {
+font-size: 4rem; /* possibly change? */
+font-weight: 400;
+}
+
+
+h1 {
+text-align: center;
+width: 100%;
+position: static;
+margin: 2rem 0;
+}
+
+
+/* table of contents */
+.toc {
+background-color: #f5f5f5;
+padding: 2rem;
+margin: 0 0 2rem 0;
+border-bottom: 1px solid #ddd;
+position: sticky;
+z-index: 100;
+}
+
+
+.toc h2 {
+margin-bottom: 1rem;
+font-size: 1.5rem;
+}
+
+
+.toc ul {
+list-style: none;
+display: flex;
+gap: 2rem;
+flex-wrap: wrap;
+}
+
+
+.toc a {
+text-decoration: none;
+color: #333;
+font-size: 1.1rem;
+transition: color 0.2s ease;
+}
+
+
+.toc a:hover {
+color: #666;
+text-decoration: underline;
+}
+
+
+/* project sections */
+.project-section {
+max-width: 1200px;
+margin: 0 auto 4rem;
+padding: 0 2rem;
+scroll-margin-top: 200px;
+}
+
+
+.project-section h2 {
+font-size: 2rem;
+margin-bottom: 1rem;
+margin-top: 2rem;
+}
+
+
+.project-section p {
+font-size: 1rem;
+line-height: 1.6;
+margin-bottom: 1rem;
+color: #333;
+}
+
+
+.logo {
+max-width: 80%;
+max-height: 80%;
+object-fit: cover;
+}
+
+
+/* right side */
+.right {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.nav {
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+}
+
+
+.nav a {
+text-decoration: none;
+color: inherit;
+font-size: 1.5rem;
+cursor: pointer;
+}
+
+
+/* gallery */
+.gallery-container {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+width: 100%;
+margin: 0 auto;
+}
+
+
+.gallery-item img {
+max-width: 300px;
+max-height: 300px;
+width: 100%;
+height: auto;
+object-fit: contain;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+
+.gallery-item img:hover {
+transform: scale(1.05);
+}
+
+
+/* lightbox modal */
+.lightbox {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.9);
+z-index: 1000;
+align-items: center;
+justify-content: center;
+}
+
+
+.lightbox-content {
+max-width: 90%;
+max-height: 90%;
+object-fit: contain;
+}
+
+
+.close {
+position: absolute;
+top: 2rem;
+right: 2rem;
+color: white;
+font-size: 3rem;
+cursor: pointer;
+}
+
+
+.close:hover {
+color: #ccc;
+}
+
+
+/* small screens stack */
+@media (max-width: 768px) {
+.container {
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+}
+
+
+.left {
+border-right: none;
+border-bottom: 1px solid #000;
+}
+
+.gallery-item img {
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+}

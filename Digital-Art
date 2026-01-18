@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Art</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="Digital-Art" class="active">Digital Art</a></li>
+            <!-- <li><a href="3D-modelling.html">3D Modelling</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="motion-graphics.html">Motion Graphics</a></li> -->
+        </ul>
+    </nav>
+
+    <nav class="toc">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#they-are-real-real">They Are Real</a></li>
+            <li><a href="#realms-on-the-rails">Realms on the Rails</a></li>
+            <li><a href="#ether">Ether</a></li>
+        </ul>
+    </nav>
+
+    <!-- THEY ARE REAL -->
+
+    <section id="they-are-real-real" class="project-section">
+        <h2>They Are Real</h2>
+        <p>Description</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/TAR1.png" alt="Real 1" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/TAR2.png" alt="Real 2" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/TAR3.png" alt="Real 3" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/TAR4.png" alt="Real 4" class="gallery-img" />
+            </div>
+        </div>
+    </section>
+
+    <!-- REALMS ON THE RAILS -->
+
+    <section id="realms-on-the-rails" class="project-section">
+        <h2>Realms on the Rails</h2>
+        <p>Description</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/DaggerFront.png" alt="Dagger" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/FireballFront.png" alt="Fireball" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/ForestBack.png" alt="Forest" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/HealingFront.png" alt="Healing" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/HighJumpFront.png" alt="High Jump" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/RevolverFront.png" alt="Revolver" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/SteamPunkBack.png" alt="Steampunk" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/VolcanoBack.png" alt="Volcano" class="gallery-img" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ETHER -->
+
+    <section id="ether" class="project-section">
+        <h2>Ether</h2>
+        <p>Description</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/Skull.png" alt="Skull" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/Hand.png" alt="Hand" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/ether back.png" alt="Skull" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="images/ether pages.png" alt="Hand" class="gallery-img" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

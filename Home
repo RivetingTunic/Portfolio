@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+        <img src="images/portrait.jpg" alt="Logo" class="logo" />
+    </div>
+
+    <div class="right">
+        <nav class="nav">
+        <a href="/Digital-Art">Art</a>
+        <a href="#3D-modelling">3D Modelling</a>
+        <a href="#photography">Photography</a>
+        <a href="#motion-graphics">Motion Graphics</a>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>
