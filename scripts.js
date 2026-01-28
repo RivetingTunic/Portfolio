@@ -1,4 +1,3 @@
-
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const lightboxVideo = document.getElementById('lightbox-video');
@@ -24,10 +23,14 @@ galleryItems.forEach(item => {
 
 closeBtn.addEventListener('click', function() {
     lightbox.classList.remove('active');
+    lightboxVideo.pause();
+    lightboxVideo.currentTime = 0;
 });
 
 lightbox.addEventListener('click', function(e) {
     if (e.target === lightbox) {
         lightbox.classList.remove('active');
+        lightboxVideo.pause();
+        lightboxVideo.currentTime = 0;
     }
 });

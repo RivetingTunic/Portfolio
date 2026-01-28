@@ -163,6 +163,12 @@ cursor: pointer;
     margin: 30px 0;
 }
 
+.gallery-container:has(> .gallery-item:only-child) {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -172,6 +178,10 @@ cursor: pointer;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
     aspect-ratio: 1;
+}
+
+.gallery-container:has(> .gallery-item:only-child) .gallery-item {
+    aspect-ratio: auto;
 }
 
 .gallery-img {

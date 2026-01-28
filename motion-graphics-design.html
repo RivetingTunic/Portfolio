@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Art</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game-development.html">Game Development</a></li>
+            <li><a href="digital-art.html">Digital Art</a></li>
+            <li><a href="3D-modelling.html">3D Modelling</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="motion-graphics-design.html" class="active">Motion Graphics & Design</a></li>
+        </ul>
+    </nav>
+
+    <nav class="toc">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#kinetic-typography">Kinetic Typography - OK</a></li>
+            <li><a href="#ed-logo">ED Logo</a></li>
+            <li><a href="#character-animation-and-design">Character Animation and Design</a></li>
+            <li><a href="#drury-dining-app">Drury Dining App</a></li>
+        </ul>
+    </nav>
+
+        <!-- Kinetic Typography - OK -->
+
+    <section id="kinetic-typography" class="project-section">
+        <h2>Kinetic Typography - OK by Joey Valence and Brae</h2>
+        <p>A kinetic typography video created for the song "OK" by Joey Valence and Brae, showcasing dynamic text animations synchronized with the music.
+            If you wish to hear with sound, please click on the video and play. Created using After Effects.
+        </p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <video height="400" src="videos/motion-graphics/Kinetic typography.mp4" alt="OK" class="gallery-img" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- ED Logo -->
+
+    <section id="ed-logo" class="project-section">
+        <h2>ED Logo</h2>
+        <p>This was a short logo animation I created to showcase my motion graphics brand. Created using After Effects and
+            Illustrator.
+        </p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <video height="400" src="videos/motion-graphics/ED Logo.mp4" alt="ED Logo" class="gallery-img" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Animation and Design -->
+
+    <section id="character-animation-and-design" class="project-section">
+        <h2>Character Animation and Design</h2>
+        <p>I was tasked with designing a character and giving it life through animation. I ended up creating this snake
+            cowboy character and animating two short clips to showcase its personality. Created using After Effects and
+            Illustrator.
+        </p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <video height="400" src="videos/motion-graphics/CharacterAnimation1.mp4" alt="Character Animation 1" class="gallery-img" autoplay muted loop></video>
+            </div>
+            <div class="gallery-item">
+                <video height="400" src="videos/motion-graphics/CharacterAnimation2.mp4" alt="Character Animation 2" class="gallery-img" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drury Dining App -->
+    <section id="drury-dining-app" class="project-section">
+        <h2>Drury Dining App</h2>
+        <p>
+            A splash screen I animated for the Drury Dining App project. Design is by Lauren Snyder and animation is by me.
+            The goal of the project was to create an app for students to easily check dining hall menus, hours, and nutrition information.
+            Animated using After Effects.
+        </p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <video height="400" src="videos/motion-graphics/Drury Dining.mp4" alt="Drury Dining App" class="gallery-img" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+        <video class="lightbox-content" id="lightbox-video" controls></video>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
