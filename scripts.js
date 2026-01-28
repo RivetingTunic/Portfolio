@@ -1,22 +1,33 @@
 
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
+const lightboxVideo = document.getElementById('lightbox-video');
 const closeBtn = document.querySelector('.close');
-const galleryImages = document.querySelectorAll('.gallery-img');
+const galleryItems = document.querySelectorAll('.gallery-img');
 
-galleryImages.forEach(img => {
-    img.addEventListener('click', function() {
-        lightbox.style.display = 'flex';
-        lightboxImg.src = this.src;
+galleryItems.forEach(item => {
+    item.addEventListener('click', function() {
+        lightbox.classList.add('active');
+        
+        // Check if it's a video or image
+        if (this.tagName === 'VIDEO') {
+            lightboxImg.style.display = 'none';
+            lightboxVideo.style.display = 'block';
+            lightboxVideo.src = this.src;
+        } else {
+            lightboxVideo.style.display = 'none';
+            lightboxImg.style.display = 'block';
+            lightboxImg.src = this.src;
+        }
     });
 });
 
 closeBtn.addEventListener('click', function() {
-    lightbox.style.display = 'none';
+    lightbox.classList.remove('active');
 });
 
 lightbox.addEventListener('click', function(e) {
     if (e.target === lightbox) {
-        lightbox.style.display = 'none';
+        lightbox.classList.remove('active');
     }
 });
