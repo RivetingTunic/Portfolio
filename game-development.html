@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Art</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/game-development.html">Game Development</a></li>
+            <li><a href="/digital-art.html" class="active">Digital Art</a></li>
+            <li><a href="/photography.html">Photography</a></li>
+            <li><a href="/motion-graphics-design.html">Motion Graphics & Design</a></li>
+        </ul>
+    </nav>
+
+    <nav class="toc">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="#realms-on-the-rails">Realms on the Rails</a></li>
+            <li><a href="#fish-td">Fish TD</a></li>
+            <li><a href="#icu">ICU</a></li>
+            <li><a href="#dark web">Dark Web</a></li>
+        </ul>
+    </nav>
+
+        <!-- REALMS ON THE RAILS -->
+
+    <section id="realms-on-the-rails" class="project-section">
+
+        <h2>Realms on the Rails</h2>
+        <p>Realms on the Rails is a Multiplayer Roguelike video game that was developed among a group of seven students at Drury University.
+            You and up to three other players band together to plunder a train with boxcars that serve as portals
+            to other dimensions. Each car has its own objective and treasures galore. Using their gold and magic playing cards,
+            players work their way to The Conductor to take over the train.
+        </p>
+
+        <h3>The Cards</h3>
+        <p>These are the illustrations for the magic card abilities
+            players may use in the game. When designing the cards, it was important for the illustration to show the player
+            what it does. As well as stay true to the art style of the game and maintain consistency. All digitally hand drawn, 
+            painted, and designed by me.
+        </p>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/images/digital-art/Forest.png" alt="Forest" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/SteamPunk.png" alt="Steampunk" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/Volcano.png" alt="Volcano" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/Dagger.png" alt="Dagger" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/Fireball.png" alt="Fireball" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/Healing.png" alt="Healing" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/HighJump.png" alt="High Jump" class="gallery-img" />
+            </div>
+            <div class="gallery-item">
+                <img src="/images/digital-art/Revolver.png" alt="Revolver" class="gallery-img" />
+            </div>
+
+            <div class="gallery-item">
+                <img src="/images/digital-art/Roots.png" alt="Volcano" class="gallery-img" />
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+
+        <h3>Particles</h3>
+        <p>I created the particles for multiple assets. I never touched Unreal Engine's particle system, but it was a lot of fun to learn the little I did.
+            These are some previews of the particles implemented into the game.
+        </p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <video height="400" src="/videos/rotr/BehemothParticles.mp4" alt="behemoth" class="gallery-img" autoplay muted loop></video>
+            </div>
+            <div class="gallery-item">
+                <video height="400" src="/videos/rotr/HoverRings.mp4" alt="hover" class="gallery-img" autoplay muted loop></video>
+            </div>
+            <div class="gallery-item">
+                <video height="400" src="/videos/rotr/LeafParticles.mp4" alt="leaves" class="gallery-img" autoplay muted loop></video>
+            </div>
+            <div class="gallery-item">
+                <video height="400" src="/videos/rotr/SteamParticles.mp4" alt="steam" class="gallery-img" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" />
+        <video class="lightbox-content" id="lightbox-video" controls></video>
+    </div>
+    <script src="/scripts.js"></script>
+</body>
+</html>
