@@ -34,15 +34,34 @@
         <h2>Realms on the Rails</h2>
         <p>Realms on the Rails is a Multiplayer Roguelike video game that was developed among a group of seven students at Drury University.
             You and up to three other players band together to plunder a train with boxcars that serve as portals
-            to other dimensions. Each car has its own objective and treasures galore. Using their gold and magic playing cards,
+            to other realms. Each car has its own objective and treasures galore. Using their gold and magic cards,
             players work their way to The Conductor to take over the train.
         </p>
-
+        <iframe src="https://drive.google.com/file/d/1GfRm2-HKqyI3cgFv7J20HuuUyprD_YDQ/preview" width="720" height="480" allow="autoplay" allowfullscreen></iframe>
+        <p>Each realm has a different objective to complete to unlock the door to the next realm. The realms are randomly generated every new run.
+            The Tree realm requires players to collect enough acorns to unlock the next door. The Volcano realm pushes players to reach the top
+            before being killed by lava or enemies. The Steampunk Dungeon realm gives players a complex maze to find minibosses that drop keys
+            to unlock the door.
+        </p>
+        <p>Each realm has a different objective to complete to unlock the door to the next realm. The realms are randomly generated every new run.
+            The Tree realm requires players to collect enough acorns to unlock the next door. The Volcano realm pushes players to reach the top
+            before being killed by lava or enemies. The Steampunk Dungeon realm gives players a complex maze to find minibosses that drop keys
+            to unlock the door.
+        </p>
+        <p>
+            This is a short demo that I edited together from the recordings of three of our team members playing the game. They put
+            their names in the bottom left corner to differentiate who is playing. This is what we ended up with as a final product.
+            We did not deliver as much as we wanted to, but with the development hurdles we faced and learned from, we are happy
+            with what we had at the end.
+        </p>
+        
         <h3>The Cards</h3>
         <p>These are the illustrations for the magic card abilities
             players may use in the game. When designing the cards, it was important for the illustration to show the player
-            what it does. As well as stay true to the art style of the game and maintain consistency. All digitally hand drawn, 
-            painted, and designed by me.
+            what it does and what realm it's from. I used Clip Studio Paint from start to finish for these designs.
+            There is a half-tone pipeline I created to give the cards the comic style we were aiming to have in the game.
+             I didn't get to polish these as much as I wanted to, but I am happy with the results. The goal was to stay true
+             to the art style we wanted and keep consistency. All digitally hand drawn, painted, and designed by me.
         </p>
 
         <div class="gallery-container">
@@ -79,9 +98,21 @@
 
     <section class="project-section">
 
-        <h3>Particles</h3>
-        <p>I created the particles for multiple assets. I never touched Unreal Engine's particle system, but it was a lot of fun to learn the little I did.
-            These are some previews of the particles implemented into the game.
+        <h3>Particles & Post Processing</h3>
+        <p>I created particle effects for multiple assets throughout the game. I had never worked with Unreal Engine's
+            particle system before, but I really enjoyed learning how it works. I spent a few hours watching online
+            tutorials to better understand the system and how I could implement it into the game. Through that process,
+            I created some solid effects that help immerse players in each realm.
+        </p>
+        <p>
+            I also created several post-processing effects based on online tutorials. The outline post-process creates
+            lines along the edges of geometry, with the thickness of lines varying depending on distance. I also
+            modified a physically based rendering effect from an online tutorial. Unlike traditional cel shading,
+            which creates distinct shading steps primarily through lighting, this effect evaluates individual pieces
+            of geometry and creates gradient steps based on the geometry's colors and textures.
+        </p>
+        <p>
+            Below are some previews of the particle effects with the post-processing effects implemented in the game.
         </p>
         <div class="gallery-container">
             <div class="gallery-item">
